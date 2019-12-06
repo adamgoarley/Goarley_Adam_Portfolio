@@ -1,10 +1,223 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='css/main.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <title>Adam Goarley</title>
+</head>
+
+<body>
+  <div class="container">
+
+      <main>
+      
+          <header>
+            <div id="header">
+              <h1 class="hidden">Adam Goarley</h1>
+              <div class="logoContainer">
+                  <img src="../images/logo(color).svg" alt="" height="100%" width="100%" id="logo">
+              </div>
+              
+              <img src="../images/me_mobile.jpg" alt="" height="auto" width="100%" class="me_mobile">
+              <img src="../images/me_tablet.jpg" alt="" height="auto" width="100%" class="me_tablet">
+              <img src="../images/me_desktop.jpg" alt="" height="auto" width="100%" class="me_desk">
+
+              <div id="first_text_wrapper">
+                  <div id="first_text">
+                    <h2>Adam Goarley</h2>
+                    <div class="line"></div>
+                     <h3 class="firstText">I am a web designer, photographer, and videographer based in London Ontario, Canada.</h3>
+                      <img src="../images/arrow.svg" alt="" height="100%" width="100%" class="arrow">
+                  </div>
+              </div>
+      
+            </div>
+          </header>
+
+          <section id="content_1">
+
+            <div class="tagline">
+                <div class="line2"></div>
+                <h2 class="taglineText">Let me bring your ideas to life.</h2>
+                <div class="line3"></div>
+            </div>
+
+          </section>
+
+          <section id="content_2">
+
+              <div class="skills">
+                  <img src="../images/skills_mobile.jpg" alt="" height="auto" width="100%" class="skillsPhoto">
+
+                  
+
+                  <div class="skillsBox">
+
+                    <h2 id="skills_text">SKILLS</h2>
+
+                    <div id="skills_info">
+                        <div class="text1 space">
+                            <p>HTML5 <br> CSS3 <br> Javascript <br> PHP <br> MySQL</p>
+                        </div>
+    
+                        <div class="text2 space">
+                            <p>Photoshop <br> Illustrator <br> Adobe XD <br> Premier Pro <br> Lightroom</p>
+                        </div>
+    
+                        <div class="text3 space">
+                            <p>After Effects <br> Illustrator <br> InDesign <br> Premier Pro <br> GitHub</p>
+                        </div>
+    
+                        <div class="text4 space">
+                            <p>Audition <br> Cinema 4D <br> Videography <br> Photography <br> Drone </p>
+                        </div>
+                    </div>
+
+                    <div id="skills_infoDesk">
+                        <div class="text1Desk spaceDesk">
+                            <p>HTML5 <br> CSS3 <br> Javascript <br> PHP <br> MySQL</p>
+                        </div>
+    
+                        <div class="text2Desk spaceDesk">
+                            <p>Photoshop <br> Illustrator <br> Adobe XD <br> Premier Pro <br> Lightroom</p>
+                        </div>
+    
+                        <div class="text3Desk spaceDesk">
+                            <p>After Effects <br> Illustrator <br> InDesign <br> Premier Pro <br> GitHub</p>
+                        </div>
+    
+                        <div class="text4Desk spaceDesk">
+                            <p>Audition <br> Cinema 4D <br> Videography <br> Photography <br> Drone </p>
+                        </div>
+                    </div>
+
+                    <div id="skillSVG">
+                        <img src="../images/plant.png" height="100%" width="100%" class="plant" alt="">
+                        <img src="../images/arrow.svg" alt="" height="100%" width="100%" class="arrow2">
+                    </div>
+
+                  </div>
+  
+              </div>
+  
+          </section>
+
+          <section id="infoSquares">
+            <h2 class="hidden">Info Squares</h2>
+
+    {{#each data}}
+        <div class="content">
+            <div class="square1Text">
+                <h2>{{Headings}}</h2>
+                <div class="line4"></div>
+                <p>{{Copy}}</p>
+            </div>
+    
+            <div class="square1Image">         
+                <img src="images/{{Images}}" height="500px" width="100%"> 
+            </div>
+        </div>
+    {{/each}}
+    
+        {{!-- <div class="square2 content">
+                <div class="square2Text">
+                    <h2>Icon Crazy Site Design & Build</h2>
+                    <div class="line4"></div>
+                    <p>Available tracking on mobile, tablet and desktop.<br>Download our app today! Available on iOS and android.</p>
+                </div>
+    
+                <div class="square2Image">
+              
+                    
+                </div>
+    
+        </div>
+    
+        <div class=" hidden square2Desktop content">
+    
+                <div class="square2Image">
+                
+                    
+                </div>
+                
+                <div class="square2Text">
+                    <h2>Icon Crazy Site Design & Build</h2>
+                    <div class="line4"></div>
+                    <p>Available tracking on mobile, tablet and desktop.<br>Download our app today! Available on iOS and android.</p>
+                </div>
+    
+        </div>
+    
+        <div class="square3 content">
+                <div class="square3Text">
+                    <h2>Equipment</h2>
+                    <div class="line4"></div>
+                    <p>Thermosecurity device runs on cellular connection<br>with built in WiFi and Bluetooth backup. Plus, powerful<br>encryption against hackers.</p>
+                </div>
+    
+                <div class="square3Image">
+               
+                    
+                </div>
+    
+        </div>
+    
+      </section>--}}
+ 
+      <section id="video">
+        <div class="videoDemo"> 
+
+
+
+            {{!-- -----------------------form test---------------------------- --}}
+
+
+        <form action="data/contact.php" method="post">
+        <h1>Contact Me</h1>
+
+        <label for="name-field">First and Last Name</label>
+        <input id="name-field" name="name" type="text" placeholder="Name">
+
+        <label for="email-field">Email</label>
+        <input id="email-field" name="email" type="email" placeholder="Email">
+
+        <label for="subject-field">Subject</label>
+        <input id="subject-field" name="subject" type="text" placeholder="Subject">
+
+        <label for="message-field">Message</label>
+        <textarea id="message-field" name="message"></textarea>
+
+        <button type="submit">Send</button>
+
+
+            {{!-- -----------------------form test end---------------------------- --}}
+
+
+        </div>
+      </section>
+
+      <section id="contact">
+          <div class="contactSection">
+              <img src="../images/drone_mobile.jpg" alt="" height="1000px" width="100%">
+              <div class="form"></div>
+          </div>
+      </section>
+
+      <section id="footer">
+          <div class="footerBox">
+              <img src="../images/logo(white).svg" alt="" height="100px" width="100%">
+          </div>
+      </section>
+
+        </main>
+
+  </div>
+
+    
+</body>
+  <script src="js/main.js"></script>
 </html>
