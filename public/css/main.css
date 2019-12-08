@@ -5,6 +5,7 @@
   max-width: 1200px;
 }
 
+
 p 
 {
   font-family: 'Muli', sans-serif; /*------Need to link------- */
@@ -22,7 +23,8 @@ h1, h2, h3
 
 body
 {
-  background-color: #fffff;
+  background-color: #ffffff;
+  width: 100%;
 }
 
 
@@ -156,20 +158,30 @@ body
 .skillsBox
 {
   width: 85%;
-  height: 720px;
+  height: 800px;
   background-color: white;
   display: inline-block;
   box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
-  margin-top: -110%;
+  margin-top: 30%;
+  left: 8%;
   color: #707070;
+  position: absolute;
+  max-width: 980px;
+}
+
+#skills_infoDesk
+{
+  display: none;
 }
 
 #skills_info
 {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 20px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  font-size: 15px;
   width: 90%;
+  left: 50%;
+  line-height: 50px;
 }
 
 .space p
@@ -177,12 +189,77 @@ body
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: start;
+  transition: 0.25s ease;
+}
+
+.space p:hover
+{
+  color: #AF8C74;
 }
 
 .space
 {
   justify-content: center;
+  /* margin-left: 11%; */
+  margin-left: auto;
 }
+
+.text1
+{
+  margin-left: 48px;
+}
+
+.text2
+{
+margin-left: 60%;
+margin-top: -292px;
+}
+
+.text3
+{
+  margin-left: 48px;
+  margin-top: -41px;
+}
+
+.text4
+{
+margin-left: 60%;
+margin-top: -291px;
+}
+
+#skillSVG
+{
+  
+}
+
+.skillsPhoto
+{
+  margin-bottom: 20%;
+}
+
+.plant
+{
+  height: 40%;
+  width: 30%;
+  transform: rotate(90deg);
+  margin-top: -30px;
+}
+
+.arrow2
+{
+  opacity: 50%;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .text3, .text4
+{
+  margin-top: 20px;
+} */
 
 .line4
 {
@@ -205,6 +282,17 @@ body
   color: #707070;
 }
 
+.portfolio_text
+{
+  text-align: center;
+  color: #AF8C74;
+}
+
+#infoSquares
+{
+  margin-top: 270px;;
+}
+
 .square1Text, .square2Text, .square3Text
 {
   width: 65%;
@@ -213,6 +301,11 @@ body
 .square1Text h2, .square2Text h2, .square3Text h2
 {
   text-align: start;
+}
+
+.content img
+{
+  object-fit: cover;  width: 100%;  height: 100%;
 }
 
 
@@ -249,7 +342,6 @@ body
 {
   width: 100%;
   height: 250px;
-  background-color: tomato;
 }
 
 
@@ -261,20 +353,9 @@ body
   text-align: center;
 }
 
-.form
-{
-  width: 85%;
-  height: 720px;
-  background-color: white;
-  display: inline-block;
-  box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
-  margin-top: -200%;
-  color: #707070;
-}
-
 .footerBox
 {
-  width: 100%;s
+  width: 100%;
   height: 150px;
   background-color: #707070;
   margin-top: 50px;
@@ -285,8 +366,83 @@ body
   padding-top: 20px;
 }
 
+.contactPhoto
+{
+  object-fit: cover;  width: 100%;  height: 950px;
+}
+
+.form
+{
+  width: 85%;
+  height: 720px;
+  background-color: white;
+  /* display: inline-block; */
+  box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
+  margin-top: -200%;
+  color: #707070;
+}
+
+#name
+{
+
+}
+
+#email
+{
+  
+}
+
+#subject
+{
+  
+}
+
+#message
+{
+  
+}
+
 
 @media screen and (min-width: 640px) {
+
+  #skills_info
+  {
+    display: none;
+  }
+
+  #skills_infoDesk
+{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  line-height: 50px;
+  width: 91%;
+}
+.spaceDesk p
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: start;
+  transition: 0.25s ease;
+  align-content: space-around;
+}
+
+.spaceDesk p:hover
+{
+  color: #AF8C74;
+}
+
+.spaceDesk
+{
+  justify-content: center;
+  /* margin-left: 11%; */
+  margin-left: auto;
+}
+
+.text1Desk
+{
+  margin-left: 90px;
+}
 
   #logo
   {
@@ -335,7 +491,7 @@ body
   .arrow
   {
     opacity: 26%;
-    margin-top: 73px;
+    margin-top: 24px;
     height: 50px;
     width: 50px;
   }
@@ -348,6 +504,16 @@ body
   .line3
   {
     margin-bottom: 50px;
+  }
+
+  .skillsBox 
+  {
+    height: 600px;
+  }
+
+  .skillsPhoto
+  {
+    object-fit: cover;  width: 100%;  height: 950px;
   }
 
   #infoSquares
@@ -396,6 +562,35 @@ body
       display: none;
     } 
 
+
+    #first_text
+    {  
+      height: 250px;
+      width: 540px;
+      position: relative;
+      top: 120%;
+    }
+    
+      #first_text h2
+      {
+        font-size: 45px;
+        margin-top: 30px;
+      }
+
+      #first_text h3
+      {
+        color: #707070;
+        font-size: 18px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+      }
+
+    .content
+    {
+      display: flex;
+      flex-direction: row;
+    }
+
     .square2
     {
         display: none;
@@ -422,4 +617,23 @@ body
         width: 40%;
         height: 500px;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    .skillsBox
+    {
+      margin-left: 1%;
+      margin-top: 10%;
+    }
+
+    .plant 
+    {
+      height: 23%;
+      width: 17%;
+      margin-top: -30px;
+  }
+
+
+
   }
