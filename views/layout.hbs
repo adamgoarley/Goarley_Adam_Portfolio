@@ -53,7 +53,6 @@
               <div class="skills">
                   <img src="../images/skills_mobile.jpg" alt="" height="auto" width="100%" class="skillsPhoto">
 
-                  
 
                   <div class="skillsBox">
 
@@ -107,7 +106,7 @@
           </section>
 
           <section id="infoSquares">
-            <h2 class="hidden">Info Squares</h2>
+            <h2 class="portfolio_text">Some Of My Work</h2>
 
     {{#each data}}
         <div class="content">
@@ -117,93 +116,42 @@
                 <p>{{Copy}}</p>
             </div>
     
-            <div class="square1Image">         
-                <img src="images/{{Images}}" height="500px" width="100%"> 
+            <div class="square1Image">      
+                <img src="images/{{Images}}" height="100%" width="100%"> 
             </div>
         </div>
     {{/each}}
     
-        {{!-- <div class="square2 content">
-                <div class="square2Text">
-                    <h2>Icon Crazy Site Design & Build</h2>
-                    <div class="line4"></div>
-                    <p>Available tracking on mobile, tablet and desktop.<br>Download our app today! Available on iOS and android.</p>
-                </div>
     
-                <div class="square2Image">
-              
-                    
-                </div>
-    
-        </div>
-    
-        <div class=" hidden square2Desktop content">
-    
-                <div class="square2Image">
-                
-                    
-                </div>
-                
-                <div class="square2Text">
-                    <h2>Icon Crazy Site Design & Build</h2>
-                    <div class="line4"></div>
-                    <p>Available tracking on mobile, tablet and desktop.<br>Download our app today! Available on iOS and android.</p>
-                </div>
-    
-        </div>
-    
-        <div class="square3 content">
-                <div class="square3Text">
-                    <h2>Equipment</h2>
-                    <div class="line4"></div>
-                    <p>Thermosecurity device runs on cellular connection<br>with built in WiFi and Bluetooth backup. Plus, powerful<br>encryption against hackers.</p>
-                </div>
-    
-                <div class="square3Image">
-               
-                    
-                </div>
-    
-        </div>
-    
-      </section>--}}
  
       <section id="video">
         <div class="videoDemo"> 
-
-
-
-            {{!-- -----------------------form test---------------------------- --}}
-
-
-        <form action="data/contact.php" method="post">
-        <h1>Contact Me</h1>
-
-        <label for="name-field">First and Last Name</label>
-        <input id="name-field" name="name" type="text" placeholder="Name">
-
-        <label for="email-field">Email</label>
-        <input id="email-field" name="email" type="email" placeholder="Email">
-
-        <label for="subject-field">Subject</label>
-        <input id="subject-field" name="subject" type="text" placeholder="Subject">
-
-        <label for="message-field">Message</label>
-        <textarea id="message-field" name="message"></textarea>
-
-        <button type="submit">Send</button>
-
-
-            {{!-- -----------------------form test end---------------------------- --}}
-
-
+            <video>{{video}}</video>
         </div>
       </section>
+      
 
       <section id="contact">
           <div class="contactSection">
-              <img src="../images/drone_mobile.jpg" alt="" height="1000px" width="100%">
-              <div class="form"></div>
+              <img src="../images/drone.jpg" alt="" class="contactPhoto" height="1000px" width="100%">
+    <div class="form">
+        <form action="contact.php" method="post">
+        <h1>Contact Me</h1>
+
+        <label id="name" for="name-field">First and Last Name</label>
+        <input id="name-field" name="name" type="text" placeholder="Name">
+
+        <label id="email" for="email-field">Email</label>
+        <input id="email-field" name="email" type="email" placeholder="Email">
+
+        <label id="subject" for="subject-field">Subject</label>
+        <input id="subject-field" name="subject" type="text" placeholder="Subject">
+
+        <label id="message" for="message-field">Message</label>
+        <textarea id="message-field" name="message"></textarea>
+
+        <button type="submit">Send</button>
+    </div>
           </div>
       </section>
 

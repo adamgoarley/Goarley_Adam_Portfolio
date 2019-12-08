@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
   // here is where we set up the query 
   // let query = `SELECT Id * FROM tbl_content WHERE id="${req.params.target}"`;
 
-  let query = "SELECT Id, Images, Headings, Copy FROM tbl_content";
+  let query = "SELECT Id, Images, Headings, Copy, video FROM tbl_content";
 
   sql.query(query, (err, result) => {
     if (err) console.log(err); //something broke?!

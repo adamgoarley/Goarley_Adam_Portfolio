@@ -282,6 +282,12 @@ margin-top: -291px;
   color: #707070;
 }
 
+.portfolio_text
+{
+  text-align: center;
+  color: #AF8C74;
+}
+
 #infoSquares
 {
   margin-top: 270px;;
@@ -297,20 +303,13 @@ margin-top: -291px;
   text-align: start;
 }
 
+.content img
+{
+  object-fit: cover;  width: 100%;  height: 100%;
+}
+
 
 /* -----------INFO SQUARES--------------*/
-
-
-/* #infoSquares div:nth-of-type(1)
-{
-  /* margin-left: 30px; 
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 0 auto;
-  justify-content: center;
-  margin-top: -2px;
-} */
 
 .content
 {
@@ -343,29 +342,6 @@ margin-top: -291px;
 {
   width: 100%;
   height: 250px;
-  /* background-color: tomato; */
-  background: linear-gradient(195deg, #3ecca7, #3666df);
-background-size: 400% 400%;
-
--webkit-animation: AnimationName 50s ease infinite;
--moz-animation: AnimationName 50s ease infinite;
-animation: AnimationName 50s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:69% 0%}
-    50%{background-position:32% 100%}
-    100%{background-position:69% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:69% 0%}
-    50%{background-position:32% 100%}
-    100%{background-position:69% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:69% 0%}
-    50%{background-position:32% 100%}
-    100%{background-position:69% 0%}
-}
 }
 
 
@@ -375,17 +351,6 @@ animation: AnimationName 50s ease infinite;
 .contactSection
 {
   text-align: center;
-}
-
-.form
-{
-  width: 85%;
-  height: 720px;
-  background-color: white;
-  display: inline-block;
-  box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
-  margin-top: -200%;
-  color: #707070;
 }
 
 .footerBox
@@ -399,6 +364,42 @@ animation: AnimationName 50s ease infinite;
 .footerBox img
 {
   padding-top: 20px;
+}
+
+.contactPhoto
+{
+  object-fit: cover;  width: 100%;  height: 950px;
+}
+
+.form
+{
+  width: 85%;
+  height: 720px;
+  background-color: white;
+  /* display: inline-block; */
+  box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
+  margin-top: -200%;
+  color: #707070;
+}
+
+#name
+{
+
+}
+
+#email
+{
+  
+}
+
+#subject
+{
+  
+}
+
+#message
+{
+  
 }
 
 
@@ -510,6 +511,11 @@ animation: AnimationName 50s ease infinite;
     height: 600px;
   }
 
+  .skillsPhoto
+  {
+    object-fit: cover;  width: 100%;  height: 950px;
+  }
+
   #infoSquares
   {
     margin-top: 80px;
@@ -562,7 +568,6 @@ animation: AnimationName 50s ease infinite;
       height: 250px;
       width: 540px;
       position: relative;
-      left: 5%;
       top: 120%;
     }
     
@@ -571,7 +576,7 @@ animation: AnimationName 50s ease infinite;
         font-size: 45px;
         margin-top: 30px;
       }
-      
+
       #first_text h3
       {
         color: #707070;
@@ -579,25 +584,6 @@ animation: AnimationName 50s ease infinite;
         margin-bottom: 0px;
         margin-left: 30px;
       }
-
-
-
-      /* -------------------------database test------------------------------- */
-      /* #infoSquares div:nth-of-type(1) */
-    #infoSquares div:nth-child(1)
-    {
-      /* margin-left: 30px;  */
-    }
-
-    #infoSquares img:nth-child(2)
-    {
-      /* margin-left: 90px;  */
-    }
-
-    .square1Text
-    {
-      
-    }
 
     .content
     {
@@ -635,8 +621,19 @@ animation: AnimationName 50s ease infinite;
 
   @media screen and (min-width: 1200px) {
 
-    .skillsBox{
-      margin-left: 6%;
+    .skillsBox
+    {
+      margin-left: 1%;
+      margin-top: 10%;
     }
+
+    .plant 
+    {
+      height: 23%;
+      width: 17%;
+      margin-top: -30px;
+  }
+
+
 
   }
