@@ -11,6 +11,8 @@
 </head>
 
 <body>
+<script>document.body.className += ' fade-out';</script>
+
   <div class="container">
 
       <main>
@@ -18,7 +20,7 @@
           <header>
             <div id="header">
               <h1 class="hidden">Adam Goarley</h1>
-              <div class="logoContainer">
+              <div id="logoContainer">
                   <img src="../images/logo(color).svg" alt="" height="100%" width="100%" id="logo">
               </div>
               
@@ -123,13 +125,13 @@
     {{/each}}
     
     
- 
+    {{#each data}}
       <section id="video">
         <div class="videoDemo"> 
             <video>{{video}}</video>
         </div>
       </section>
-      
+    {{/each}}
 
       <section id="contact">
           <div class="contactSection">

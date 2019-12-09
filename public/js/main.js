@@ -1,4 +1,13 @@
 (() => {
+
+
+  window.onload = function() {
+    var logo = document.getElementById('logo')
+    logo.style.marginTop = "25px";
+    };
+
+
+
     // try to get the object and do stuff 
     const seeMoreButtons = document.querySelectorAll('.see-more'),
       popOver = document.querySelector('.popover');
@@ -68,7 +77,7 @@
 
     // -----------------------------Animation----------------------------------
 
-    // console.log("hello!");
+  console.log("hello!");
 
     // // var tl = new TimelineMax();
     // // $('.play').click(function() {
@@ -77,7 +86,6 @@
     
     // const hamburger = document.querySelector('#bottom')
 
-    // TweenMax.from(hamburger, 2, {x: 100});
-    
+    // TweenMax.from(hamburger, 2, {x: 100});    
 
 })();

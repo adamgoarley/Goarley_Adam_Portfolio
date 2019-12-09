@@ -25,7 +25,8 @@ body
 {
   background-color: #ffffff;
   width: 100%;
-}
+} 
+
 
 
 /* -----------MY PROJECT STARTS HERE----------- */
@@ -378,7 +379,7 @@ margin-top: -291px;
   background-color: white;
   /* display: inline-block; */
   box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
-  margin-top: -200%;
+  margin-top: -230%;
   color: #707070;
 }
 
@@ -541,7 +542,31 @@ margin-top: -291px;
 
 @media screen and (min-width: 965px) {
 
+  .nav
+  {
+    display: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
   #logo
+  {
+    margin-top: -280px;
+    position: absolute;
+    transition: 1.2s ease;
+    position: absolute;
+    left: 40%;
+  }
+
+  .logoContainer
+  {
+    position: absolute;
+  }
+
+  # logo
   {
     height: 200px;
     width: 200px;
