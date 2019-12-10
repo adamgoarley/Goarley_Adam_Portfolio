@@ -114,7 +114,6 @@ body
 
 .tagline
 {
-  /* background-color: red; */
   width: 100%;
   height: 145px;
   display: inline-block;
@@ -235,7 +234,7 @@ margin-top: -291px;
 
 .skillsPhoto
 {
-  margin-bottom: 20%;
+  margin-bottom: -4%;
 }
 
 .plant
@@ -311,6 +310,10 @@ margin-top: -291px;
 
 
 /* -----------INFO SQUARES--------------*/
+.portfolio_text
+{
+  font-size: 28px;
+}
 
 .content
 {
@@ -351,36 +354,64 @@ margin-top: -291px;
 
 .contactSection
 {
-  text-align: center;
-}
-
-.footerBox
-{
-  width: 100%;
-  height: 150px;
-  background-color: #707070;
-  margin-top: 50px;
-}
-
-.footerBox img
-{
-  padding-top: 20px;
+  
 }
 
 .contactPhoto
 {
-  object-fit: cover;  width: 100%;  height: 950px;
+  object-fit: cover;  
+  width: 100%;  
+  height: 615px;
+  position: absolute;
 }
 
 .form
 {
   width: 85%;
-  height: 720px;
+  height: auto; /*------change it back---------*/
   background-color: white;
-  /* display: inline-block; */
-  box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
-  margin-top: -230%;
   color: #707070;
+  position: absolute;
+  text-align: center;
+  left: 9%;
+  margin-top: 15%;
+}
+
+.form button 
+{
+  width: 50%;
+  background-color: #AF8C74;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: 300;  
+  color: #FFFFFF;
+}
+
+input[type=text], [type=email], select, textarea 
+{
+  width: 90%; 
+  padding: 12px;  
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical; 
+  border-width: 0px 0px 1px 0; 
+  border-style: solid;
+  border-color: #707070;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: 300;  
+}
+
+
+
+.form h2
+{
+ font-size: 35px;
 }
 
 #name
@@ -401,6 +432,20 @@ margin-top: -291px;
 #message
 {
   
+}
+
+.footerBox
+{
+  width: 100%;
+  height: 150px;
+  background-color: #707070;
+  margin-top: 618px;
+  position: relative;
+}
+
+.footerBox img
+{
+  padding-top: 20px;
 }
 
 
@@ -517,6 +562,11 @@ margin-top: -291px;
     object-fit: cover;  width: 100%;  height: 950px;
   }
 
+  .portfolio_text
+  {
+    font-size: 40px;
+  }
+
   #infoSquares
   {
     margin-top: 80px;
@@ -616,6 +666,11 @@ margin-top: -291px;
       flex-direction: row;
     }
 
+    .portfolio_text
+    {
+      font-size: 50px;
+    }
+
     .square2
     {
         display: none;
@@ -642,6 +697,18 @@ margin-top: -291px;
         width: 40%;
         height: 500px;
     }
+
+    .form
+  {
+  width: 50%;
+  height: auto; /*------change it back---------*/
+  background-color: white;
+  color: #707070;
+  position: absolute;
+  text-align: center;
+  left: 9%;
+  margin-top: 8%;
+  }
   }
 
   @media screen and (min-width: 1200px) {
