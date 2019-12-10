@@ -11,6 +11,8 @@
 </head>
 
 <body>
+<script>document.body.className += ' fade-out';</script>
+
   <div class="container">
 
       <main>
@@ -18,7 +20,7 @@
           <header>
             <div id="header">
               <h1 class="hidden">Adam Goarley</h1>
-              <div class="logoContainer">
+              <div id="logoContainer">
                   <img src="../images/logo(color).svg" alt="" height="100%" width="100%" id="logo">
               </div>
               
@@ -123,32 +125,32 @@
     {{/each}}
     
     
- 
+    
       <section id="video">
         <div class="videoDemo"> 
             <video>{{video}}</video>
         </div>
       </section>
-      
+    
 
       <section id="contact">
           <div class="contactSection">
               <img src="../images/drone.jpg" alt="" class="contactPhoto" height="1000px" width="100%">
     <div class="form">
         <form action="contact.php" method="post">
-        <h1>Contact Me</h1>
+        <h2>Let's Chat</h2>
 
-        <label id="name" for="name-field">First and Last Name</label>
-        <input id="name-field" name="name" type="text" placeholder="Name">
+        {{!-- <label id="name" for="name-field">First and Last Name</label> --}}
+        <input id="name-field" name="name" type="text" placeholder="First and Last Name">
 
-        <label id="email" for="email-field">Email</label>
+        {{!-- <label id="email" for="email-field">Email</label> --}}
         <input id="email-field" name="email" type="email" placeholder="Email">
 
-        <label id="subject" for="subject-field">Subject</label>
+        {{!-- <label id="subject" for="subject-field">Subject</label> --}}
         <input id="subject-field" name="subject" type="text" placeholder="Subject">
 
-        <label id="message" for="message-field">Message</label>
-        <textarea id="message-field" name="message"></textarea>
+        {{!-- <label id="message" for="message-field">Message</label> --}}
+        <textarea id="message-field" name="message" placeholder="Message"></textarea>
 
         <button type="submit">Send</button>
     </div>
