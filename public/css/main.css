@@ -3,6 +3,7 @@
 {
   margin: 0 auto;
   max-width: 1200px;
+  position: relative;
 }
 
 
@@ -227,10 +228,6 @@ margin-left: 60%;
 margin-top: -291px;
 }
 
-#skillSVG
-{
-  
-}
 
 .skillsPhoto
 {
@@ -352,11 +349,6 @@ margin-top: -291px;
 
 /* ---------Form---------- */
 
-.contactSection
-{
-  
-}
-
 .contactPhoto
 {
   object-fit: cover;  
@@ -412,26 +404,6 @@ input[type=text], [type=email], select, textarea
 .form h2
 {
  font-size: 35px;
-}
-
-#name
-{
-
-}
-
-#email
-{
-  
-}
-
-#subject
-{
-  
-}
-
-#message
-{
-  
 }
 
 .footerBox
@@ -608,7 +580,7 @@ input[type=text], [type=email], select, textarea
     position: absolute;
     transition: 1.2s ease;
     position: absolute;
-    left: 40%;
+    left: 35%;
   }
 
   .logoContainer
@@ -698,10 +670,20 @@ input[type=text], [type=email], select, textarea
         height: 500px;
     }
 
-    .form
+    /* #contact
+    {
+      position: absolute;
+    }
+
+    .contactSection
+    {
+      position: relative;
+    } */
+
+  .form
   {
   width: 50%;
-  height: auto; /*------change it back---------*/
+  height: auto;
   background-color: white;
   color: #707070;
   position: absolute;
@@ -712,6 +694,11 @@ input[type=text], [type=email], select, textarea
   }
 
   @media screen and (min-width: 1200px) {
+
+    /* .skills
+    {
+      position: absolute;
+    } */
 
     .skillsBox
     {
