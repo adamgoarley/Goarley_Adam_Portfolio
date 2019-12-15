@@ -1,9 +1,9 @@
 const config = {
     host: "us-cdbr-iron-east-05.cleardb.net", 
     port: 8889, 
-    uname: "ba64170cf2ec22", 
-    pword: "d249c492", 
-    dbase: "heroku_ea5c37ca652c0e9"
+    uname: "b7421c42a15cd1", 
+    pword: "5d767f59", 
+    dbase: "heroku_9c86927148f74a3"
 }
 
 // const config = {
