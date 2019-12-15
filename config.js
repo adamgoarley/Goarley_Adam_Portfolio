@@ -1,17 +1,17 @@
 const config = {
-    host: "localhost", 
+    host: "us-cdbr-iron-east-05.cleardb.net", 
     port: 8889, 
-    uname: "root", 
-    pword: "root", 
-    dbase: "db_final"
+    uname: "ba64170cf2ec22", 
+    pword: "d249c492", 
+    dbase: "heroku_ea5c37ca652c0e9"
 }
 
 // const config = {
-//     host: "us-cdbr-iron-east-05.cleardb.net", 
+//     host: "localhost", 
 //     port: 8889, 
-//     uname: "b1723d58c20307", 
-//     pword: "0bc4ba57", 
-//     dbase: "heroku_04e54b97da6318d"
+//     uname: "root", 
+//     pword: "root", 
+//     dbase: "db_final"
 // }
 
 module.exports = config;
