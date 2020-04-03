@@ -1,83 +1,569 @@
-/*
-Error: Invalid CSS after "#": expected id name, was " logo"
-        on line 594 of sass/main.scss
+nav {
+  background-color: pink; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      display: inline; }
+  nav a {
+    text-decoration: none; }
 
-589:   .logoContainer
-590:   {
-591:     position: absolute;
-592:   }
-593: 
-594:   # logo
-595:   {
-596:     height: 200px;
-597:     width: 200px;
-598:     position: absolute;
-599:     /* margin-top: -1px;
+.team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .team .user-panel {
+    flex: 0 1 200px;
+    text-align: center;
+    padding: 8px; }
+    .team .user-panel .u-avatar {
+      max-width: 200px; }
+    .team .user-panel .u-link {
+      display: block;
+      text-decoration: none;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px; }
+    .team .user-panel h1, .team .user-panel h3 {
+      margin: 5px 0; }
 
-Backtrace:
-sass/main.scss:594
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1105:in `name!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:200:in `id_selector'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:156:in `simple_selector_sequence'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:108:in `selector'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:83:in `selector_comma_sequence'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1216:in `expr!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:434:in `visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:524:in `visit_media'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"#\": expected id name, was \" logo\"\A         on line 594 of sass/main.scss\A \A 589:   .logoContainer\A 590:   {\A 591:     position: absolute;\A 592:   }\A 593: \A 594:   # logo\A 595:   {\A 596:     height: 200px;\A 597:     width: 200px;\A 598:     position: absolute;\A 599:     /* margin-top: -1px;"; }
+@media screen and (min-width: 900px) {
+  .team .user-panel {
+    flex: 1 1; }
+    .team .user-panel .u-avatar {
+      max-width: 300px; } }
+.lightbox {
+  display: none;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5000;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85); }
+  .lightbox .sidebar {
+    flex: 1; }
+  .lightbox .lb-content {
+    flex: 3; }
+  .lightbox img {
+    max-width: 250px; }
+  .lightbox .close {
+    right: 24px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    position: fixed;
+    border: thin solid white;
+    padding: 2px 14px 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25); }
+
+.show-lb {
+  display: flex !important; }
+
+.u-social li {
+  display: inline-block;
+  padding: 10px; }
+
+body {
+  color: #ffffff;
+  background-color: black; }
+
+h1, h2, h3 {
+  color: #707070; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative; }
+
+p {
+  font-family: 'Muli', sans-serif;
+  /*------Need to link------- */ }
+
+h1, h2, h3 {
+  font-family: 'Muli', sans-serif;
+  /*------Need to link------- */ }
+
+.hidden {
+  display: none; }
+
+body {
+  background-color: #ffffff;
+  width: 100%; }
+
+#logo {
+  height: 160px;
+  width: 160px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 15px; }
+
+.me_tablet {
+  display: none; }
+
+.me_desk {
+  display: none; }
+
+#first_text_wrapper {
+  text-align: center; }
+
+#first_text {
+  background-color: #FFFFFF;
+  width: 85%;
+  height: 250px;
+  display: inline-block;
+  margin-top: -62%;
+  box-shadow: 0 15px 6px -6px #818181; }
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #AF8C74;
+  display: inline-block;
+  text-align: start; }
+
+#first_text h2 {
+  color: #707070;
+  font-size: 30px;
+  font-style: bold;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  text-align: start;
+  margin-top: 30px; }
+
+#first_text h3 {
+  color: #707070;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  text-align: start; }
+
+.arrow {
+  opacity: 26%;
+  margin-top: 30px;
+  height: 25px;
+  width: 25px; }
+
+#content_1 {
+  text-align: center; }
+
+.tagline {
+  width: 100%;
+  height: 145px;
+  display: inline-block;
+  margin-top: 50px; }
+
+.taglineText {
+  color: #707070;
+  font-size: 23px;
+  font-family: "Muli"; }
+
+.line2 {
+  width: 40%;
+  height: 3px;
+  background-color: #AF8C74;
+  display: inline-block;
+  margin-bottom: -4px; }
+
+.line3 {
+  width: 40%;
+  height: 3px;
+  background-color: #AF8C74;
+  display: inline-block; }
+
+#content_2 {
+  text-align: center; }
+
+#skills_text {
+  font-size: 35px;
+  color: #AF8C74; }
+
+.skillsBox {
+  width: 85%;
+  height: 800px;
+  background-color: white;
+  display: inline-block;
+  box-shadow: 0 15px 6px -6px #818181;
+  margin-top: 30%;
+  left: 8%;
+  color: #707070;
+  position: absolute;
+  max-width: 980px; }
+
+#skills_infoDesk {
+  display: none; }
+
+#skills_info {
+  /* display: flex;
+  flex-wrap: wrap; */
+  font-size: 15px;
+  width: 90%;
+  left: 50%;
+  line-height: 50px; }
+
+.space p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: start;
+  transition: 0.25s ease; }
+
+.space p:hover {
+  color: #AF8C74; }
+
+.space {
+  justify-content: center;
+  /* margin-left: 11%; */
+  margin-left: auto; }
+
+.text1 {
+  margin-left: 48px; }
+
+.text2 {
+  margin-left: 60%;
+  margin-top: -292px; }
+
+.text3 {
+  margin-left: 48px;
+  margin-top: -41px; }
+
+.text4 {
+  margin-left: 60%;
+  margin-top: -291px; }
+
+.skillsPhoto {
+  margin-bottom: -4%; }
+
+.plant {
+  height: 40%;
+  width: 30%;
+  transform: rotate(90deg);
+  margin-top: -30px; }
+
+.arrow2 {
+  opacity: 50%;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.line4 {
+  width: 90%;
+  height: 2px;
+  background-color: #AF8C74;
+  display: inline-block; }
+
+.content h2 {
+  font-size: 19px;
+  color: #AF8C74; }
+
+.content p {
+  font-size: 12px;
+  text-align: start;
+  color: #707070; }
+
+.portfolio_text {
+  text-align: center;
+  color: #AF8C74; }
+
+#infoSquares {
+  margin-top: 270px; }
+
+.square1Text, .square2Text, .square3Text {
+  width: 65%; }
+
+.square1Text h2, .square2Text h2, .square3Text h2 {
+  text-align: start; }
+
+.content img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+/* -----------INFO SQUARES--------------*/
+.portfolio_text {
+  font-size: 28px; }
+
+.content {
+  background-color: #f8f8f8; }
+
+.square1, .square2, .square3 {
+  display: block;
+  text-align: center; }
+
+.square1Image, .square2Image, .square3Image {
+  width: 100%;
+  height: 500px; }
+
+.square1Text, .square2Text, .square3Text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center; }
+
+/* ------Video------ */
+.videoDemo {
+  width: 100%;
+  height: 250px; }
+
+/* ---------Form---------- */
+.contactPhoto {
+  object-fit: cover;
+  width: 100%;
+  height: 615px;
+  position: absolute; }
+
+.form {
+  width: 85%;
+  height: auto;
+  /*------change it back---------*/
+  background-color: white;
+  color: #707070;
+  position: absolute;
+  text-align: center;
+  left: 9%;
+  margin-top: 15%; }
+
+.form button {
+  width: 50%;
+  background-color: #AF8C74;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFFFFF; }
+
+input[type=text], [type=email], select, textarea {
+  width: 90%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-width: 0px 0px 1px 0;
+  border-style: solid;
+  border-color: #707070;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+
+.form h2 {
+  font-size: 35px; }
+
+.footerBox {
+  width: 100%;
+  height: 150px;
+  background-color: #707070;
+  margin-top: 618px;
+  position: relative; }
+
+.footerBox img {
+  padding-top: 20px; }
+
+@media screen and (min-width: 640px) {
+  #skills_info {
+    display: none; }
+
+  #skills_infoDesk {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 50px;
+    width: 91%; }
+
+  .spaceDesk p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: start;
+    transition: 0.25s ease;
+    align-content: space-around; }
+
+  .spaceDesk p:hover {
+    color: #AF8C74; }
+
+  .spaceDesk {
+    justify-content: center;
+    /* margin-left: 11%; */
+    margin-left: auto; }
+
+  .text1Desk {
+    margin-left: 90px; }
+
+  #logo {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 25px; }
+
+  .logoContainer {
+    position: relative; }
+
+  .me_mobile {
+    display: none; }
+
+  .me_tablet {
+    display: block; }
+
+  #first_text {
+    height: 350px; }
+
+  #first_text h2 {
+    font-size: 50px;
+    margin-top: 30px; }
+
+  #first_text h3 {
+    color: #707070;
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-left: 30px; }
+
+  .arrow {
+    opacity: 26%;
+    margin-top: 24px;
+    height: 50px;
+    width: 50px; }
+
+  .taglineText {
+    font-size: 28px; }
+
+  .line3 {
+    margin-bottom: 50px; }
+
+  .skillsBox {
+    height: 600px; }
+
+  .skillsPhoto {
+    object-fit: cover;
+    width: 100%;
+    height: 950px; }
+
+  .portfolio_text {
+    font-size: 40px; }
+
+  #infoSquares {
+    margin-top: 80px; }
+
+  .content h2 {
+    font-size: 25px; }
+
+  .content p {
+    font-size: 17px; }
+
+  .videoDemo {
+    height: 400px; } }
+@media screen and (min-width: 965px) {
+  .nav {
+    display: none; }
+
+  .logo {
+    display: none; }
+
+  #logo {
+    margin-top: -280px;
+    position: absolute;
+    transition: 1.2s ease;
+    position: absolute;
+    left: 35%; }
+
+  .logoContainer {
+    position: absolute; }
+
+  #logo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    /* margin-top: -1px;
+    margin-left: 374px; */
+    margin-top: -5px;
+    left: 40%; }
+
+  .me_desk {
+    display: block; }
+
+  .me_tablet {
+    display: none; }
+
+  #first_text {
+    height: 250px;
+    width: 540px;
+    position: relative;
+    top: 120%; }
+
+  #first_text h2 {
+    font-size: 45px;
+    margin-top: 30px; }
+
+  #first_text h3 {
+    color: #707070;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-left: 30px; }
+
+  .content {
+    display: flex;
+    flex-direction: row; }
+
+  .portfolio_text {
+    font-size: 50px; }
+
+  .square2 {
+    display: none; }
+
+  .square2Desktop {
+    display: contents; }
+
+  .square1, .square2Desktop, .square3 {
+    display: flex;
+    flex-direction: row; }
+
+  .square1Image, .square2Image, .square3Image {
+    width: 50%;
+    height: 500px; }
+
+  .square1Text, .square2Text, .square3Text {
+    width: 40%;
+    height: 500px; }
+
+  .form {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    color: #707070;
+    position: absolute;
+    text-align: center;
+    left: 9%;
+    margin-top: 8%; } }
+@media screen and (min-width: 1200px) {
+  /* .skills
+  {
+    position: absolute;
+  } */
+  .skillsBox {
+    margin-left: 1%;
+    margin-top: 10%; }
+
+  .plant {
+    height: 23%;
+    width: 17%;
+    margin-top: -30px; } }
+footer {
+  color: blue; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    display: inline; }
+    ul li a {
+      text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map */
