@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="../images/favcon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Adam Goarley Photography</title>
 </head>
 
@@ -34,7 +35,7 @@
                     <h2>Adam Goarley Photography</h2>
                     <div class="line"></div>
                      <h3 class="firstText">I am love capturer based in London Ontario, Canada.</h3>
-                      <img src="../images/arrow.svg" alt="" height="100%" width="100%" class="arrow">
+                      {{!-- <img src="../images/arrow.svg" alt="" height="100%" width="100%" class="arrow"> --}}
                   </div>
               </div>
       
@@ -59,33 +60,33 @@
 
                   <div class="skillsBox">
 
-                    
-
                     <div id="skills_info">
                         <div class="text1 space">
-                            <p>HTML5 <br> CSS3 <br> Javascript <br> PHP <br> MySQL</p>
+                            <h2 id="skills_text">Photo & Video</h2>
+                            <p>Wedding photography starting at $2250</p>
+                            <p>Wedding videography starting at $2850</p>
                         </div>
     
-                        <div class="text2 space">
-                            <p>Photoshop <br> Microsoft <br> Adobe XD <br> Premier Pro <br> Lightroom</p>
+                        <div class="text2 boximg space">
+                            <img src="../images/flower.png" alt="">
                         </div>
                     </div>
 
                     <div id="skills_infoDesk">
                         <div class="text1Desk spaceDesk">
-                            <h2 id="skills_text">Photo</h2>
+                            <h2 id="skills_text">Photo & Video</h2>
                             <p>Wedding photography starting at $2250</p>
+                            <p>Wedding videography starting at $2850</p>
                         </div>
     
-                        <div class="text2Desk spaceDesk">
-                            <h2 id="skills_text">Video</h2>
-                            <p>Wedding Flims starting at $2850</p>
+                        <div class="text2Desk boximg spaceDesk">
+                            <img src="../images/flower.png" alt="">
                         </div>
                     </div>
 
-                    <div id="skillSVG">
+                    {{!-- <div id="skillSVG">
                         <img src="../images/arrow.svg" alt="" height="100%" width="100%" class="arrow2">
-                    </div>
+                    </div> --}}
 
                   </div>
   
@@ -96,26 +97,224 @@
           <section id="infoSquares">
             <h2 class="portfolio_text">Some Of My Work</h2>
 
-    {{#each data}}
-        <div class="content">
+      <section id="infoSquares">
+            <h2 class="hidden">Info Squares</h2>
+
+        <div class="square1 content">
+
             <div class="square1Text">
-                <h2>{{Headings}}</h2>
+                <h2>Brett & Sarahs Engagment Session</h2>
                 <div class="line4"></div>
-                <p>{{Copy}}</p>
+                <p>We started Brett and Sarahs Engagment Session off at Cambridge Mill and then made our way out to there farm to get this amazing photo.</p>
             </div>
-    
-            <div class="square1Image">      
-                <img src="images/{{Images}}" height="100%" width="100%"> 
+
+            <div class="square1Image">
+                <img src="../images/2.jpg" alt="" height="500px" width="100%">
             </div>
         </div>
-    {{/each}}
+
+        <div class="square2 content">
+                <div class="square2Text">
+                    <h2>Ali & Pauls Wedding</h2>
+                    <div class="line4"></div>
+                    <p>Ali & Paul tied the knot at the beautiful Windermere Manor in London, Ontario.</p>
+                </div>
+
+                <div class="square2Image">
+                    <img src="../images/3.JPG" alt="" height="500px" width="100%">
+                </div>
+
+        </div>
+
+        <div class=" hidden square2Desktop content">
+
+                <div class="square2Image">
+                    <img src="../images/3.JPG" alt="" height="500px" width="100%">
+                </div>
+
+                <div class="square2Text">
+                    <h2>Ali & Pauls Wedding</h2>
+                    <div class="line4"></div>
+                    <p>Ali & Paul tied the knot at the beautiful Windermere Manor in London, Ontario.</p>
+                </div>
+
+        </div>
+
+        <div class="square3 content">
+                <div class="square3Text">
+                    <h2>Sam & Bens Barn Wedding</h2>
+                    <div class="line4"></div>
+                    <p>Sam and Bens wedding took place at the amazing Willow Creek Barn. This shot was from our sunset walk.</p>
+                </div>
+
+                <div class="square3Image">
+                    <img src="../images/4.jpg" alt="" height="500px" width="100%">
+                </div>
+
+        </div> 
+        {{!-- ------------------------------------------------------------------- --}}
+        <div class="square2 content">
+                <div class="square2Text">
+                    <h2>Jordans Reaction</h2>
+                    <div class="line4"></div>
+                    <p>This photo was from Stephanie and Jordans wedding. Just look at his awesome reaction to seeing her come down the aisle.</p>
+                </div>
+
+                <div class="square2Image">
+                    <img src="../images/5.JPG" alt="" height="500px" width="100%">
+                </div>
+
+        </div>
+
+        <div class=" hidden square2Desktop content">
+
+                <div class="square2Image">
+                    <img src="../images/5.JPG" alt="" height="500px" width="100%">
+                </div>
+
+                <div class="square2Text">
+                    <h2>Jordans Reaction</h2>
+                    <div class="line4"></div>
+                    <p>This photo was from Stephanie and Jordans wedding. Just look at his awesome reaction to seeing her come down the aisle.</p>
+                </div>
+
+        </div>
+
+        <div class="square3 content">
+                <div class="square3Text">
+                    <h2>Kat & Joes Engagement Session</h2>
+                    <div class="line4"></div>
+                    <p>Kat & Joe met on a train and for that reason alone we had to start their engagement session off at the train tracks.</p>
+                </div>
+
+                <div class="square3Image">
+                    <img src="../images/6.JPG" alt="" height="500px" width="100%">
+                </div>
+
+        </div> 
+        {{!-- ------------------------------------------------------------------- --}}
+        <div class="square2 content">
+                <div class="square2Text">
+                    <h2>Kylee with her bridesmaids</h2>
+                    <div class="line4"></div>
+                    <p>Kylee hanging with her girls at there beautiful property just outside of the city.</p>
+                </div>
+
+                <div class="square2Image">
+                    <img src="../images/7.jpg" alt="" height="500px" width="100%">
+                </div>
+
+        </div>
+
+        <div class=" hidden square2Desktop content">
+
+                <div class="square2Image">
+                    <img src="../images/7.jpg" alt="" height="500px" width="100%">
+                </div>
+
+                <div class="square2Text">
+                    <h2>Kylee with her bridesmaids</h2>
+                    <div class="line4"></div>
+                    <p>Kylee hanging with her girls at there beautiful property just outside of the city.</p>
+                </div>
+
+        </div>
+
+        <div class="square3 content">
+                <div class="square3Text">
+                    <h2>Nicole & Tims Wedding</h2>
+                    <div class="line4"></div>
+                    <p>This photo is of Nicoles bridesmaids as they walk down the bridge behind Cambridge Mill.</p>
+                </div>
+
+                <div class="square3Image">
+                    <img src="../images/8.jpg" alt="" height="500px" width="100%">
+                </div>
+
+        </div>
+        {{!-- ------------------------------------------------------------------- --}}
+        <div class="square2 content">
+                <div class="square2Text">
+                    <h2>Pam & Johns Beach Wedding </h2>
+                    <div class="line4"></div>
+                    <p>Pam and John had an amazing wedding on the beach in Sarnia!</p>
+                </div>
+
+                <div class="square2Image">
+                    <img src="../images/9.jpg" alt="" height="500px" width="100%">
+                </div>
+
+        </div>
+
+        <div class=" hidden square2Desktop content">
+
+                <div class="square2Image">
+                    <img src="../images/9.jpg" alt="" height="500px" width="100%">
+                </div>
+
+                <div class="square2Text">
+                    <h2>Pam & Johns Beach Wedding </h2>
+                    <div class="line4"></div>
+                    <p>Pam and John had an amazing wedding on the beach in Sarnia!</p>
+                </div>
+
+        </div>
+
+        <div class="square3 content">
+                <div class="square3Text">
+                    <h2>Paige & Adams Wedding </h2>
+                    <div class="line4"></div>
+                    <p>Paige and Adams wedding at the Pioneer Village here in London Ontario.</p>
+                </div>
+
+                <div class="square3Image">
+                    <img src="../images/10.jpg" alt="" height="500px" width="100%">
+                </div>
+
+        </div>
+
+        {{!-- ------------------------------------------- --}}
+
+        <div class="square2 content">
+                <div class="square2Text">
+                    <h2>Matt & Kaylas Wine Wedding</h2>
+                    <div class="line4"></div>
+                    <p>Matt and Kayla are Huge wine fans and had their wedding at the amazing aurora winery.</p>
+                </div>
+
+                <div class="square2Image">
+                    <img src="../images/11.jpg" alt="" height="500px" width="100%">
+                </div>
+
+        </div>
+
+        <div class=" hidden square2Desktop content">
+
+                <div class="square2Image">
+                    <img src="../images/11.jpg" alt="" height="500px" width="100%">
+                </div>
+
+                <div class="square2Text">
+                    <h2>Matt & Kaylas Wine Wedding</h2>
+                    <div class="line4"></div>
+                    <p>Matt and Kayla are Huge wine fans and had their wedding at the amazing aurora winery.</p>
+                </div>
+
+        </div>
+
+      </section>
     
     
     
       <section id="video">
         <div class="videoDemo"> 
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/s3R_nEDX97A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-XFTTMl2NQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+      </section>
+
+      <section id="resume">
+          <h3>Checkout my resume</h3>
+          <a href="https://drive.google.com/open?id=1BMpFv_ygqCrIlKc7QK91NhJUltaYsIVJ">Click Here</a>
       </section>
     
 
@@ -144,6 +343,14 @@
       </section>
 
       <section id="footer">
+          <div class="links s-m">   
+                <a href="https://www.instagram.com/adamgoarleyphotography/"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/adamgoarley"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/adam-goarley-32061b143/?originalSubdomain=ca"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UChV3NxP58Ex4DkFMs1EMMvw"><i class="fa fa-youtube"></i></a>
+          </div>
+
+
           <div class="footerBox">
               <img src="../images/logo(white).svg" alt="" height="100px" width="100%">
           </div>

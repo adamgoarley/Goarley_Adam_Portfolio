@@ -2,6 +2,56 @@
 @import 'modules/_navbar';
 @import 'modules/_users';
 @import 'modules/_lightbox';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.links
+{
+  // margin-top: 636px;
+  // margin-bottom: -616px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.s-m
+{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  height: 100px;
+  left: 50%;
+}
+
+.s-m a
+{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: #707070;
+  color: white;
+  margin: 0 6px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  font-size: 24px;
+}
+
+.s-m a:hover
+{
+  background: #e67e22;
+}
+
+.s-m a i{
+  transition: 0.4s all;
+}
+
+.s-m a:hover > i{
+  transform: scale(1.6) rotate(25deg);
+}
+
+
+
+// ----------------------------------------------------------------
 
 body {
     color: $main-color;
@@ -51,6 +101,12 @@ body
   position: absolute;
   margin-top: 55px;
   margin-left: 15px;
+}
+
+#resume
+{
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .me_tablet
@@ -161,16 +217,17 @@ body
 {
   font-size: 35px;
   color: #AF8C74;
+  margin-bottom: 60px;
 }
 
 .skillsBox
 {
   width: 85%;
-  height: 800px;
+  height: 500px;
   background-color: white;
   display: inline-block;
   box-shadow: 0 15px 6px -6px rgb(129, 129, 129);
-  margin-top: 30%;
+  margin-top: 10%;
   left: 8%;
   color: #707070;
   position: absolute;
@@ -184,19 +241,16 @@ body
 
 #skills_info
 {
-  /* display: flex;
-  flex-wrap: wrap; */
-  font-size: 15px;
+  font-size: 18px;
   width: 90%;
   left: 50%;
-  line-height: 50px;
+  line-height: 20px;
+  margin-top: 90px;
 }
 
 .space p
 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: start;
+  text-align: center;
   transition: 0.25s ease;
 }
 
@@ -208,7 +262,6 @@ body
 .space
 {
   justify-content: center;
-  /* margin-left: 11%; */
   margin-left: auto;
 }
 
@@ -217,10 +270,14 @@ body
   margin-left: 48px;
 }
 
-.text2
+.text2 img
 {
-margin-left: 60%;
-margin-top: -292px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: -60px;
+  margin: auto;
+  margin-top: 30px;
+  margin-left: 50px;
 }
 
 .text3
@@ -235,31 +292,15 @@ margin-left: 60%;
 margin-top: -291px;
 }
 
+// .skillsPhoto
+// {
+//   margin-bottom: -4%;
+// }
 
 .skillsPhoto
-{
-  margin-bottom: -4%;
-}
-
-.plant
-{
-  height: 40%;
-  width: 30%;
-  transform: rotate(90deg);
-  margin-top: -30px;
-}
-
-.arrow2
-{
-  opacity: 50%;
-  margin-bottom: 10px;
-  height: 50px;
-  width: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+  {
+    object-fit: cover;  width: 100%;  height: 590px;
+  }
 
 .line4
 {
@@ -290,7 +331,7 @@ margin-top: -291px;
 
 #infoSquares
 {
-  margin-top: 270px;;
+  margin-top: 20px;;
 }
 
 .square1Text, .square2Text, .square3Text
@@ -402,8 +443,6 @@ input[type=text], [type=email], select, textarea
   font-weight: 300;  
 }
 
-
-
 .form h2
 {
  font-size: 35px;
@@ -414,7 +453,7 @@ input[type=text], [type=email], select, textarea
   width: 100%;
   height: 150px;
   background-color: #707070;
-  margin-top: 618px;
+  margin-top: 700px;
   position: relative;
 }
 
@@ -423,47 +462,13 @@ input[type=text], [type=email], select, textarea
   padding-top: 20px;
 }
 
+//--------------------------------------------------
+
+//--------------------------------------------------
 
 @media screen and (min-width: 640px) {
 
-  #skills_info
-  {
-    display: none;
-  }
-
-  #skills_infoDesk
-{
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 20px;
-  line-height: 50px;
-  width: 91%;
-}
-.spaceDesk p
-{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: start;
-  transition: 0.25s ease;
-  align-content: space-around;
-}
-
-.spaceDesk p:hover
-{
-  color: #AF8C74;
-}
-
-.spaceDesk
-{
-  justify-content: center;
-  /* margin-left: 11%; */
-  margin-left: auto;
-}
-
-.text1Desk
-{
-  margin-left: 90px;
-}
+  
 
   #logo
   {
@@ -508,7 +513,6 @@ input[type=text], [type=email], select, textarea
     margin-left: 30px;
   }
 
-  
   .arrow
   {
     opacity: 26%;
@@ -529,12 +533,12 @@ input[type=text], [type=email], select, textarea
 
   .skillsBox 
   {
-    height: 600px;
+    height: 450px;
   }
 
   .skillsPhoto
   {
-    object-fit: cover;  width: 100%;  height: 950px;
+    object-fit: cover;  width: 100%;  height: 700px;
   }
 
   .portfolio_text
@@ -567,6 +571,57 @@ input[type=text], [type=email], select, textarea
 
 @media screen and (min-width: 965px) {
 
+  #skills_info
+  {
+    display: none;
+  }
+
+  #skills_infoDesk
+{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  line-height: 20px;
+  width: 91%;
+}
+
+.spaceDesk p
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: start;
+  transition: 0.25s ease;
+  align-content: space-around;
+}
+
+.spaceDesk p:hover
+{
+  color: #AF8C74;
+}
+
+.spaceDesk
+{
+  justify-content: center;
+  /* margin-left: 11%; */
+  margin-left: auto;
+}
+
+.text1Desk
+{
+  margin-left: 90px;
+  margin-top: 80px;
+}
+
+.text2Desk img
+{
+  width: 250px;
+  height: 250px;
+  margin-bottom: -60px;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: -10px;
+}
+
   .nav
   {
     display: none;
@@ -596,8 +651,6 @@ input[type=text], [type=email], select, textarea
     height: 200px;
     width: 200px;
     position: absolute;
-    /* margin-top: -1px;
-    margin-left: 374px; */
     margin-top: -5px;
     left: 40%;
   }
@@ -611,7 +664,6 @@ input[type=text], [type=email], select, textarea
     {
       display: none;
     } 
-
 
     #first_text
     {  
@@ -705,8 +757,6 @@ input[type=text], [type=email], select, textarea
       width: 17%;
       margin-top: -30px;
   }
-
-
 
   }
 
